@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>VoIP App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎙️ WebRTC</h1>
+        <div class="status" id="status">Offline</div>
+        
+        <div class="call-controls">
+            <input type="text" id="remotePeerId" placeholder="Remote ID" />
+            <button id="callButton">Call</button>
+            <button id="hangupButton" disabled>Hang Up</button>
+        </div>
+
+        <div class="info">
+            <p>My ID: <strong id="myPeerId">Connecting...</strong></p>
+            <div id="callInfo" class="call-info" style="display:none;">
+                <p>Call Duration: <span id="callDuration">00:00</span></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="client.js"></script>
+</body>
+</html>

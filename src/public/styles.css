@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    padding: 40px;
+    max-width: 450px;
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.status {
+    display: inline-block;
+    padding: 8px 16px;
+    background: #e0e0e0;
+    border-radius: 20px;
+    color: #666;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.status.online {
+    background: #4caf50;
+    color: white;
+}
+
+.status.calling {
+    background: #ff9800;
+    color: white;
+}
+
+.call-controls {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 12px 16px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: #667eea;
+}
+
+button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    min-width: 80px;
+}
+
+#callButton {
+    background: #667eea;
+    color: white;
+}
+
+#callButton:hover:not(:disabled) {
+    background: #5568d3;
+    box-shadow: 0 8px 16px rgba(102, 126, 234, 0.3);
+}
+
+#hangupButton {
+    background: #ff6b6b;
+    color: white;
+}
+
+#hangupButton:hover:not(:disabled) {
+    background: #ff5252;
+    box-shadow: 0 8px 16px rgba(255, 107, 107, 0.3);
+}
+
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.info {
+    background: #f5f5f5;
+    padding: 20px;
+    border-radius: 8px;
+    color: #666;
+    font-size: 14px;
+}
+
+.info p {
+    margin: 8px 0;
+}
+
+.call-info {
+    color: #667eea;
+    font-weight: 600;
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .call-controls {
+        flex-direction: column;
+    }
+
+    input,
+    button {
+        width: 100%;
+    }
+}
