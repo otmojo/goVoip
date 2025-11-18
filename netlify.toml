@@ -1,0 +1,8 @@
+[build]
+  publish = "src/public"
+  command = "echo 'No build command needed - serving static files'"
+
+# Note: WebSocket endpoint /ws requires a separate WebSocket server
+# Netlify static hosting serves the UI, but the Go backend with WebSocket
+# support needs to be deployed elsewhere (e.g., Railway, Render, Fly.io)
+# or use Netlify Edge Functions with Deno Deploy for WebSocket support
