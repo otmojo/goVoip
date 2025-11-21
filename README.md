@@ -2,9 +2,9 @@
 
 This project is a simple WebRTC phone application that allows users to make voice calls through their web browsers. It utilizes WebRTC for real-time communication for signaling.
 
-![image](https://github.com/otmojo/goVoip/blob/main/src/Image%20(1).jpg)
+<img src="https://github.com/otmojo/goVoip/blob/main/src/Image%20(1).jpg" alt="Image 1" width="300" />
 
-![image](https://github.com/otmojo/goVoip/blob/main/src/Image%20(2).jpg)
+<img src="https://github.com/otmojo/goVoip/blob/main/src/Image%20(2).jpg" alt="Image 2" width="300" />
 
 
 
